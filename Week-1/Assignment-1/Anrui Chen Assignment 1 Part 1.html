@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Anrui Chen Assignment 1 Part 1</title>
+	</head>
+	
+	<body id="a1p1">
+	
+		<a href="C:\Users\AC\Desktop\HTML, CSS, JS\Week 1\HTML Advanced 1.html#Advanced1">Go to HTML Advanced 1</a>
+	
+		<form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+	
+		<h1>Please Enter Your Details For Our Dating Website!</h1>
+	
+			<fieldset>
+				<legend>Your Face</legend>
+
+					<label for="picture">Your image: </label>
+					<input type='file' id="picture" name="picture">
+					
+					<p>Image preview:</p>
+					<img id='preview'></img>
+					<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+						
+			</fieldset>
+			
+			<fieldset>
+				<legend>Your General Details</legend>
+				
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" placeholder="Your full name" required><br>
+				
+				<label for"gender">Gender:</label>
+				<input type="radio" id="gender" name="gender" value="male" required>Male
+				<input type="radio" id="gender" name="gender" value="female" required>Female<br>			
+				
+				<label for="age">Age:</label>
+				<input type="number" id="age" name="age" required><br>
+				
+				<label for="dob">Date of birth:</label>
+				<input type="date" id="dob" name="dob" required><br>
+				
+				<label for="favcolor">Favorite color:</label>
+				<input type="color" id="favcolor" name="favcolor" required><br>
+				
+				<label for="country">Which country:</label>
+				<select name="countries" id="country" required>
+					<option value="CA">Canada</option>
+					<option value="US">United States</option>
+					<option value="DE">Germany</option>
+					<option value="CH">China</option>
+					<option value="FR">France</option>
+					<option value="NA">no selection</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend>Your Indicators</legend>
+				
+				<label for="height">Height:</label>
+				Short<input type="range" id="height" name="height" required>Tall<br>
+				
+				<label for="money">Salary:</label>
+				Poor<input type="range" id="money" name="money" required>Rich
+			</fieldset>
+			
+			<fieldset>
+				<legend>Your Contact Information</legend>
+				
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" name="email" required><br>
+				
+				<label for="cell">Mobile:</label>
+				<input type="tel" id="cell" name="cell" required><br>
+				
+				<label for="address" style="vertical-align:top">Address:</label>
+				<textarea id="address" name="address" rows="5" cols="50" required></textarea><br>
+				
+				<label for="contact">Method to Contact you:</label>
+				<input type="checkbox" id="contact" name="contact" value="email">Email
+				<input type="checkbox" id="contact" name="contact" value="Whatsapp">Whatsapp
+				<input type="checkbox" id="contact" name="contact" value="In-app chat">In-app chat
+			</fieldset>
+						
+			<input type="submit" value="Submit">
+	
+	</body>
+	
+</html>
