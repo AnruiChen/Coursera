@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Forms</title>
+		<a href="HTML Advanced 1.html#Advanced1">Go to HTML Advanced 1</a>
+		<hr>
+	</head>
+	
+	<body id="Forms">
+		<section>
+		
+			<!--
+			<form action="http://www.server.com.subdirectory/program.php" method="get or post"
+			</form>
+			-->
+			
+			<form action="file:///C:/Users/AC/Desktop/HTML,%20CSS,%20JS/HTML%20Forms.html#Forms" method="get">
+				<p>Please enter any feedback you have</p>
+				
+				<textarea rows="5" cols="30" name="feedback">
+					Please enter text here
+				</textarea>
+				<br>
+				<input type="submit" value="TEST TEST (send)">			
+			</form>
+			
+			<br>
+			<hr>
+			<br>
+			
+			<form action="file:///C:/Users/AC/Desktop/HTML,%20CSS,%20JS/HTML%20Forms.html#Forms" method="post">
+
+				<label for="lastname">Please enter your last name:</label>
+				<input type="text" id="lastname" name="lastname" placeholder="Last name Here" autofocus>
+				<br> <br>
+				
+				<label for="age">Please enter your age:</label>
+				<input type="text" id="age" name="age" placeholder="Age" required> <br> <br>
+				
+				Do you have any of the following?<br>
+				<input type="checkbox" name="have" value="car">Car<br>
+				<input type="checkbox" name="have" value="boat">Boat<br>
+				<input type="checkbox" name="have" value="house">House<br><br>
+				
+				Of the following, which is your favorite color?<br>
+				<input type="radio" name="color" value="red">Red<br>
+				<input type="radio" name="color" value="blue">Blue<br>
+				<input type="radio" name="color" value="green">Green<br><br>
+				
+				Which city would you like to go to?<br>
+				<select name="cities">
+					<option value="hk">Hong Kong</option>
+					<option value="vc">Vancouver</options>
+					<option value="sf">San Francisco</options>
+				</select><br><br>
+								
+				<label for="password">Enter your password:</label>
+				<input type="password" id="password" name="userpassword"><br><br>				
+				
+				<input type="submit" value="Submit information"><br><br><hr><br>
+			
+			</form>
+			
+			<form action="file:///C:/Users/AC/Desktop/HTML,%20CSS,%20JS/HTML%20Forms.html#Forms" method="post" enctype="multipart/form-data">
+				<input type="file" name="filetoUpload">
+				<input type="submit" value="Submit the file">
+			</form><br><br><hr>
+			
+			<form action="file:///C:/Users/AC/Desktop/HTML,%20CSS,%20JS/HTML%20Forms.html#Forms" method="post">
+				
+				<fieldset>
+					<legend>Personal Information</legend><br>
+				
+					<label for="age2">Your age: </label>
+					<input type="number" id="age2" name="age2"><br><br>
+				
+					<label for="date">Birthday: </label>
+					<input type="date" id="date" name="date"><br><br>
+				
+					<label for="time">When do you want to wake up?</label>
+					<input type="time" id="time" name="time"><br><br>
+				
+					<label for="favcolor">What's your favorite color?</label>
+					<input type="color" id="favcolor" name="color"><br><br>
+				
+					<label for="Mood">Your Mood: </label>
+					Bad <input type="range" id="mood" name="mood" min="0" max="100" steps="5" value="50">Good<br><br>
+				
+				<input type="submit" value="Submit Information">
+				
+				</fieldset>
+			</form>
+			
+			<br><br><hr><br>
+			<a href="HTML Forms.html#Forms">Back to the top</a>
+		</section>
+	</body>
+
+</html>
